@@ -2,13 +2,11 @@
 session_start();
 require_once '../database/conexion.php';
 
-// Validación de acceso
 if (!isset($_SESSION['usuario']) || $_SESSION['nivel'] !== 'Administrador') {
     header("Location: ../auth/login.php");
     exit();
 }
 
-// Navbar global (detecta el nivel automáticamente)
 include '../includes/navbar.php';
 
 // Obtener visitas con PDO

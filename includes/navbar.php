@@ -75,6 +75,7 @@ $usuario = $_SESSION['usuario'] ?? 'Desconocido';
                     <li class="nav-item"><a class="nav-link" href="../admin/visitas.php">👩🏻‍🤝‍👨🏾 Visitas</a></li>
                     <li class="nav-item"><a class="nav-link" href="../reports/reporte_pdf.php" target="_blank">📄 PDF</a></li>
                     <li class="nav-item"><a class="nav-link" href="../reports/grafica_mes.php" target="_blank">📊 Gráfica</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../admin/manual_documentacion.php" target="_blank">📓 Documentación</a></li>
 
                 <?php elseif ($nivel == 'Vendedor'): ?>
                     <li class="nav-item"><a class="nav-link" href="../vendedor/dashboard.php">🏠 Dashboard</a></li>
